@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(17, 15, 77, 0.947);
+
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(17, 15, 77, 0.947);
+            color: aliceblue;
+        }
+
+        .nav-bar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-bar.logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-bar .logo h1 {
+            font-size: 29px;
+            margin: 0;
+        }
+
+        .nav-bar .logo p {
+            font-size: 15px;
+            color: rgba(151, 161, 208, 0.779);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+
+        .nav-bar .nav-links {
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items: center;
+        }
+
+        .nav-bar .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+        }
+
+        .nav-bar .nav-links a:hover {
+            border: 4px solid rgb(10, 189, 213);
+            border-radius: 8px;
+        }
+
+        .profile {
+            margin-top: 50px;
+            /* Space above the profile section */
+            text-align: center;
+            /* Center the text */
+        }
+
+        .profile img {
+            border-radius: 50%;
+            /* Make the image circular */
+            width: 400px    ;
+            /* Set a width for the profile image */
+            height: 400px;
+            /* Set a height for the profile image */
+            transition: border 0.3s ease;
+        }
+
+        .profile img:hover {
+            border: 5px solid rgb(113, 230, 12);
+            /* Add a border on hover */
+        }
+
+        .profile h2 {
+            margin: 10px 0 5px 0;
+            /* Margin for the name */
+            color: rgb(95, 165, 225);
+            font-size: 40px;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        /* 
+        .profile p {
+            color: #7f8c8d; 
+            font-size: larger;
+            font-family:cursive;
+            text-align: center;
+            left: 40%;
+        } */
+        .pro-para {
+            margin: 0;
+            right: 20%;
+            left: 20%;
+            color: aliceblue;
+            font-size: 25px;
+            font-family:monospace;
+
+        }
+        .topic{
+            margin: 90px   ;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            transition: 0.3 ease;
+            /* background-color: aquamarine */
+        }
+        .topic-idea{
+            background-color: #2e86df;
+            border: 1px solid rgb(44, 84, 133);
+            padding: 20px;
+            box-shadow: 0 0 10px ;
+            font-family: cursive;
+            text-align: center;
+            margin: 0;
+            border-radius: 10px
+        }
+        .topic-idea img{
+            width: 70px;
+        }
+        .topic  :hover{
+            background-color: rgb(111, 214, 180);
+            margin: 15px;
+        }
+        .topic-idea a{
+            text-decoration: none;
+        }
+        .topic-idea a:hover{
+            color: rgb(230, 12, 12);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="professional-portfolio.png" alt="my portfolio" width="40px">
+                <div>
+                    <h1>
+                        My Porfolio
+                    </h1>
+                    <p>Let Explore The Beyond</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="">Home</a>
+                <a href="">About Me</a>
+                <a href="">Portfolio</a>
+                <a href="">Contant</a>
+            </div>
+        </div>
+    </header>
+    <div class="profile">
+        <img src="/360_F_862113547_0w5dxsH5FvR8FzRmfuYwgYHads5tWCj4.jpg" alt="Profile Image" />
+        <h2>ASHUTOSH LUHA</h2>
+        <div class="pro-para">
+            <p>I am a passionate web designer focused on creating intuitive and engaging websites. With a keen eye for
+                detail and a deep understanding of design principles, I strive to deliver seamless, user-centric
+                experiences. </p>
+        </div>
+    </div>
+    <section>
+        <div class="topic">
+            <div class="topic-idea">
+                <h2>About Me</h2>
+                <p>I'm a creative and detail-oriented web designer with a passion for crafting unique, user-friendly websites. With a background in design and a strong understanding of front-end development, I enjoy bringing ideas to life through clean, responsive layouts.</p>
+
+            </div>
+            <div class="topic-idea">
+                <h2>Contant</h2>
+                <P>for any idea contact me here :
+                    <a href="mailto:ashutoshluha@gmail.com">E:mail</a>
+                </P>
+                <p>
+                    Phone no.: 3838635299 <br> <br> address: <br> 123,hobs Road Nagar; bhubanswer;Odisha 
+                </p>
+            </div>
+            <div class="topic-idea">
+                <h2>Portfolio</h2>
+                <p>Here are some of my recent projects</p>
+                <img src="/atom.png" alt="react js">
+                <img src="/java.png" alt="java">
+                <img src="/coding.png" alt="html">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
