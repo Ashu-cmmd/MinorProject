@@ -74,20 +74,22 @@
             border-radius: 50px;
             width: 70%;
             height: auto;
-            transition: border 0.5s ease;
+            transition:  0.9s ease;
         }
-        .about-me img:hover{
-            border: 5px solid rgb(7, 7, 7);
-            padding: 20px;
+
+        .about-me img:hover {
+            scale: 1.1;
         }
-        .about-me p{
+
+        .about-me p {
             font-size: 20px;
-            font-family:monospace;
+            font-family: monospace;
             margin: 0;
-            transition: margin-right 2s ease-in-out;
+            transition:  2s ease-in-out;
         }
-        .about-me p:hover{
-            
+
+        .about-me p:hover {
+            scale: 1.1;
         }
 
         .about-me div {
@@ -108,10 +110,50 @@
 
             .about-me div {
                 width: 100%;
-                
+
                 padding-left: 0;
             }
         }
+
+        .skills-container {
+            margin: 20px 0;
+        }
+
+        .skills-container ul {
+            display: flex;
+            /* Use flexbox */
+            justify-content: space-evenly;
+            align-items: safe;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line */
+            list-style-type: none;
+            /* Remove default list styling */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .skills-container li {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Light background for contrast */
+            border-radius: 8px;
+            /* Rounded corners */
+            padding: 15px;
+            /* Padding for better spacing */
+            margin: 10px;
+            /* Margin between list items */
+            /* Flex-grow, flex-shrink, and basis for responsive layout */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Optional shadow for depth */
+            transition: transform 0.8s ease;
+            /* Smooth hover effect */
+            flex: 1 1 100px;
+        }
+
+        .skills-container li:hover {
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
+        }
+
     </style>
 </head>
 
@@ -158,6 +200,43 @@
                 energized.
             </p>
         </div>
+    </div>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <ul>
+            <li>
+                <strong>Graphic Design:</strong> Proficient in creating visually appealing designs using tools like
+                Adobe Photoshop and Illustrator.
+            </li>
+            <li>
+                <strong>Web Development:</strong> Experienced in building responsive websites using HTML, CSS, and
+                JavaScript.
+            </li>
+            <li>
+                <strong>Content Creation:</strong> Skilled in writing engaging content for various platforms, ensuring
+                clarity and creativity.
+            </li>
+            <li>
+                <strong>UI/UX Design:</strong> Focused on creating user-friendly interfaces and enhancing user
+                experiences through research and testing.
+            </li>
+            <li>
+                <strong>HTML/CSS/JavaScript:</strong> Strong foundation in front-end technologies, enabling the
+                development of interactive web applications.
+            </li>
+            <li>
+                <strong>Responsive Design:</strong> Expertise in designing websites that work seamlessly across
+                different devices and screen sizes.
+            </li>
+            <li>
+                <strong>Photography:</strong> Passionate about capturing moments and enhancing images to tell compelling
+                stories visually.
+            </li>
+            <li>
+                <strong>Creative Writing:</strong> Ability to craft narratives and content that resonate with audiences,
+                enhancing brand storytelling.
+            </li>
+        </ul>
     </div>
 </body>
 
