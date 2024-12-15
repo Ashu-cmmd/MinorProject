@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(20, 105, 218, 0.947);
+    color: aliceblue;
+    box-shadow: 0 0 20px black;
+}
+
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-bar .logo h1 {
+    font-size: 29px;
+    margin: 0;
+}
+
+.nav-bar .logo p {
+    font-size: 15px;
+    color: rgba(151, 161, 208, 0.779);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+.nav-bar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition:  0.9s ease;
+}
+
+.nav-bar .nav-links a:hover {
+   scale: 1.2;
+}
+.call-images {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the images horizontally */
+    align-items: flex-end; /* Center the images vertically */
+    padding: 20px; /* Keep the existing padding */
+    color: white; /* Keep the existing text color */
+    border-radius: 10px; /* Keep the existing border radius */
+    margin: 20px;
+
+}
+.call-images img{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    max-width: 100%;
+    
+}
