@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(251, 67, 67, 0.947);
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(238, 14, 14);
+    color: rgb(241, 246, 250);
+    box-shadow: 0 0 10px rgb(65, 15, 15);
+}
+
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-bar .logo h1 {
+    font-size: 29px;
+    margin: 0;
+}
+
+.nav-bar .logo p {
+    font-size: 15px;
+    color: rgba(151, 161, 208, 0.779);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+.nav-bar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition:  0.9s ease;
+}
+
+.nav-bar .nav-links a:hover {
+   scale: 1.1;
+}
+
+h1 {
+    margin: 0;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project {
+    background: #e30909;
+    border: 1px solid #d71212;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+}
+
+.project h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.project p {
+    font-size: 1em;
+    margin: 0 0 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffc8ba;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 20px ;
+}
+
+
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr; 
+    }
+}
