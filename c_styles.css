@@ -57,15 +57,33 @@ body {
 
 .call {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    /* background-color: rgba(233, 97, 196, 0.947); */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f6ccd8;
+    border: 1px solid #eac2c2;
     border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.9s ease;
+}
 
+.call h1 {
+    font-size: 2em;
+    font-family: monospace;
+    color: #333;
+    margin: 0;
+}
+
+.call p {
+    font-size: 1.2em;
+    font-family: cursive;
+    color: #666;
+    margin: 0;
+}
+.call :hover{
+    scale: 1.1;
 }
 
 .formx {
@@ -83,6 +101,7 @@ body {
     max-width: 400px;
     /* Set a max-width for larger screens */
     box-shadow: 0 0 10px;
+    transition: 0.9s ease;
 }
 
 
@@ -93,17 +112,24 @@ body {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    /* Adjust margin for better spacing */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 2px solid rgba(151, 161, 208, 0.779);
     border-radius: 5px;
     font-size: 16px;
     background-color: rgba(240, 248, 255, 0.8);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: 0.9s ease-in;
 }
 
 .formx textarea {
     resize: vertical;
     height: 100px;
+}
+.formx label{
+    font-family:monospace;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 /* Media Queries for Responsiveness */
@@ -122,29 +148,4 @@ body {
         font-size: 14px;
         /* Slightly smaller font size */
     }
-}
-
-.call-images {
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    justify-content: center;
-    /* Center the images horizontally */
-    align-items: flex-end;
-    /* Center the images vertically */
-    padding: 5px;
-    /* Reduced padding */
-    color: white;
-    /* Keep the existing text color */
-    border-radius: 10px;
-    /* Keep the existing border radius */
-    margin: 5px;
-    /* Further reduced margin to bring images closer to the form */
-}
-
-.call-images img {
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    max-width: 100%;
 }
